@@ -46,7 +46,7 @@ if (mysqli_num_rows($result) > 0) {
     ';
     // Output the spreadsheet as a download
     header("Content-Type: application/Microsoft 365/xls");
-    header("Content-Disposition:attachment; filename=download_Brgy_Officials_data.xls");
+    header("Content-Disposition:attachment; filename=Brgy_Officials_data.xls");
     echo $output;
 
 }

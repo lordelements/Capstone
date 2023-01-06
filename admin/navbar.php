@@ -1,6 +1,6 @@
 <?php   
-session_start();
-include '../condb.php';
+    session_start();
+    include '../condb.php';
 ?> 
 <title>Barangay Zone 1 Bulan Sorsogon | Admin</title>
 <header id="navbar-spy" class="header header-1 header-transparent header-fixed">

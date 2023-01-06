@@ -134,6 +134,9 @@
                         echo 
                         "
                         <div class='container' style='width:1500px;margin-left:-130px'>
+							<form method='POST' action='exportReports.php'>
+								<input type='submit' value='export_excel' class='btn btn-success'>
+							</form>
                         <table class='table table-striped'>
                         <thead>
                         <tr style = 'height: 30px;'>

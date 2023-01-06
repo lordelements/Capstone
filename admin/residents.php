@@ -175,13 +175,16 @@
                         </tr>";
 
                         $result = mysqli_query($cn,$sql);
-                        
+                        $offcialscountno = 1;
                         while($row = mysqli_fetch_assoc($result))
                         {       
                         	$query = mysqli_query($cn, "SELECT * FROM residents");
                         	$disp = mysqli_fetch_assoc($query);
 
-                                echo"<tbody id='myTable'>";
+							?>
+
+					
+                                <!-- echo"<tbody id='myTable'>";
                                 echo "<tr>";
                                 
                                 echo "<td>" . $row['residentid'] . " </td> ";
@@ -190,8 +193,21 @@
                                 echo "<td>" . $row['birthdate'] . "  </td> ";
                                 echo "<td>" . $row['civilstatus'] . "</td> ";
                                 echo "<td>" . $row['address'] . "</td> ";
-                                echo "<td>" . $row['contact'] . "</td> ";
+                                echo "<td>" . $row['contact'] . "</td> "; -->
 
+								<tbody id='myTable'>
+                                <tr>
+								<td><?php echo $offcialscountno++ ?></td>
+                               
+							  
+							   <td><?php echo  $row['lastname'].' ' . $row['middlename'] . ' ' . $row['firstname'] ?></td>
+							   <td><?php echo  $row['gender'] ?></td>
+							   <td><?php echo  $row['birthdate'] ?></td>
+							   <td><?php echo  $row['civilstatus'] ?></td>
+							   <td><?php echo  $row['address'] ?></td>
+							   <td><?php echo  $row['contact'] ?></td>
+
+						<?php
                                 if ($row['status'] == "0")
                                 {
                                 	$stat = "Active";
@@ -212,10 +228,9 @@
                                 else {
                                 	echo "<a class='btn btn-warning' style='width:49%;border:1px solid black;color:black' href='activateResidents.php?id=" . $row['residentid'] . "'>Restore</a></td> ";
                                 }
-
-                	}
-                	echo '</table><br>';
-                	?>
+								?>
+                <?php	}
+				echo '</table><br>'; ?>
 			</div>
 		</div>
 	</section>

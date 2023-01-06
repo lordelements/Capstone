@@ -225,7 +225,6 @@
                                 <!-- echo"<tbody id='myTable'>";
                                 echo "<tr>"; -->
 								<td><?php echo $offcialscountno++ ?></td>
-                               
 							   <td><?php echo  $row['position'] ?></td>
 							   <td><?php echo  $row['lastname'].' ' . $row['middlename'] . ' ' . $row['firstname'] ?></td>
 							   <td><?php echo  $row['gender'] ?></td>
