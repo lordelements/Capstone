@@ -192,6 +192,9 @@
                         echo 
                         "
                         <div class='container' style='width:1550px;margin-left:-200px'>
+							<form method='POST' action='exportOfficials.php'>
+							  <input type='submit' value='export-excel' class='btn btn-success'>
+							</form>
                         <table class='table table-striped table-hover'>
                         <thead>
                         <tr style = 'height: 30px;'>
