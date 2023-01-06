@@ -2,7 +2,7 @@
 session_start();
 include '../condb.php';
 ?> 
-<title>Barangay Zone 1 Bulan Sorsogon | Admin</title>
+<title>Barangay Zone 1 Bulan Sorsogon | Users</title>
 <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
                 <nav id="primary-menu" class="navbar navbar-fixed-top">
                     <div class="container-fluid">
