@@ -53,16 +53,16 @@
 		<div class="carousel slider-navs" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="true" data-dots="false" data-space="0" data-loop="true" data-speed="800">
 			<div class="slide--item bg-overlay bg-overlay-dark3">
 				<div class="bg-section">
-					<img src="bg.jpg" alt="background">
+					<img src="bg1.jpg" alt="background">
 				</div>
 			</div>
 			<div class="slide--item bg-overlay bg-overlay-dark3">
 				<div class="bg-section">
-					<img src="bg.jpg" alt="background">
+					<img src="bg2.jpg" alt="background">
 				</div>
 			</div>
 			<div class="slide--item bg-overlay bg-overlay-dark3">
-				<div class="bg-section">
+				<div class="bg3-section">
 					<img src="bg.jpg" alt="background">
 				</div>
 			</div>

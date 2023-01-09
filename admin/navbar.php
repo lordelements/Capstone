@@ -1,7 +1,4 @@
-<?php   
-    session_start();
-    include '../condb.php';
-?> 
+
 <title>Barangay Zone 1 Bulan Sorsogon | Admin</title>
 <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
                 <nav id="primary-menu" class="navbar navbar-fixed-top">
@@ -16,14 +13,15 @@
                         </div>
                         <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
                             <ul class="nav navbar-nav nav-pos-center navbar-left">
+                            <!-- <ul class="nav navbar-nav nav-pos-center navbar-left"> -->
                                 
-                                <li><a href="index.php">Dashboard</a></li>
-                                <li><a href="aboutus.php">About Us</a></li>
-                                <li><a href="residents.php">Residents</a></li>
-                                <li><a href="officials.php">Officials</a></li>
-                                <li><a href="reports.php">Reports</a></li>
-                                <li><a href="certificates.php">Certificates</a></li>
-                                <li><a href="users_account.php">Users</a></li>
+                                <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page" >Dashboard</a></li>
+                                <li class="nav-item"><a href="aboutus.php" class="nav-link active" aria-current="page" >About Us</a></li>
+                                <li class="nav-item"><a href="residents.php" class="nav-link active" aria-current="page" >Residents</a></li>
+                                <li class="nav-item"><a href="officials.php" class="nav-link active" aria-current="page" >Officials</a></li>
+                                <li class="nav-item"><a href="reports.php" class="nav-link active" aria-current="page" >Reports</a></li>
+                                <li class="nav-item"><a href="certificates.php" class="nav-link active" aria-current="page" >Certificates</a></li>
+                                <li class="nav-item"><a href="users_account.php" class="nav-link active" aria-current="page" >Users</a></li>
 
                               <!--   <li class="has-dropdown active">
                                     <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">My Account</a>
@@ -144,4 +142,3 @@
 -->
 
                 </div>
-            

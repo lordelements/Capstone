@@ -16,11 +16,12 @@ $address = $_POST['address'];
 $password = $_POST['pw'];
 $contact = $_POST['contact'];
 $acctype = $_POST['acctype'];
-// $idcard = $_POST['idcard'];
+$idcard = $_POST['idcard'];
 
 //echo $resid . " " . $lastname . " " . $middlename . " " . $firstname . " " . $birthdate . " " . $civilstatus . " " . $address . " " . $contact;
 
-$res = mysqli_query($cn, "UPDATE accounts SET position='$position', lname='$lname', mname='$mname', fname='$fname', email='$email', address='$address', pw='$password', contact='$contact', acctype='$acctype' WHERE logid='$userid'");
+$res = mysqli_query($cn, "UPDATE accounts SET position='$position', lname='$lname', mname='$mname',
+ fname='$fname', email='$email', address='$address', pw='$password', contact='$contact', acctype='$acctype', idcard='$idcard' WHERE logid='$userid'");
 	
 	function myAlert($msg, $url)
 	{

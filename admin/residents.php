@@ -1,4 +1,4 @@
-
+<?php include '../condb.php';?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -148,14 +148,14 @@
 			Search: <input id="myInput" class="form-control" style="display:inline;width: 50%;" type="text" placeholder="Search by ID, Name, Address, Contact Number, and etc."></center><br>
 			<?php 
 
-			$email = $_SESSION['email'];
-			$logid = $_SESSION['logid'];
+			// $email = $_SESSION['email'];
+			// $logid = $_SESSION['logid'];
 
 			$sql = "SELECT * FROM residents";
 
                         echo 
                         "
-                        <div class='container' style='width:1500px;margin-left:-130px'>
+                    <div class='container' style='width:1500px;margin-left:-130px'>
 						    <form method='POST' action='exportResidents.php'>
 								<input type='submit' value='export_excel' class='btn btn-success'>
 							</form>

@@ -1,4 +1,15 @@
-<!-- <?php include 'security.php';?> -->
+<!-- <?php 
+   include_once("../condb.php");
+   error_reporting(0);
+   session_start();
+   
+   if(!isset($_SESSION['email']) ) {
+      $_SESSION['success']  = "You must login first";
+       header("Location: ../index.php");
+       exit(0);
+   }
+
+?> -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -20,6 +31,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
+		
 		<div id="wrapper" class="wrapper clearfix">
 		
 				<?php include 'navbar.php'; ?>	
@@ -37,18 +49,19 @@
 					<div class="slider--content">
 					
 						<div class="text-center" style="margin-top: -110px;">
-						<!-- notification message -->
-						<?php if (isset($_SESSION['success'])) : ?>
-							<div class="form-group alert-warning"  style="width:100%;height:40px;">
-								<h3 class="alert alert-success"style="font-size: 20px;">
-									<?php 
-										echo $_SESSION['success']; 
-										unset($_SESSION['success']);
-									?>
-								</h3>
-							</div>
-						<?php endif ?>
-						<?php include 'total_cards.php' ?>
+							<!-- notification message -->
+							<?php if (isset($_SESSION['success'])) : ?>
+								<div class=".container-fluid mb-10">
+								<!-- <div class="form-group alert-warning row ml-sm mt-10 flex pos-relative  clearfix"  style="width:100%;height:40px;"> -->
+									<h3 class="alert alert-success"style="font-size: 20px;">
+										<?php 
+											echo $_SESSION['success']; 
+											unset($_SESSION['success']);
+										?>
+									</h3>
+								</div>
+							<?php endif ?>
+							<?php include 'total_cards.php' ?>
 							<!-- <img src="../logo.png" alt="Barangay Zone 1 Bulan Sorsogon logo" width="600" height="600" style="margin-top: -20px;"> -->
 						</div>
 					</div>

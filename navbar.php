@@ -153,6 +153,6 @@ include 'condb.php';
 
                 </div>
             
-          <script src="validatepass.js"></script>
+          <!-- <script src="validatepass.js"></script> -->
           <script src="assets/js/sweetalert2.min.js"></script>
           <script src="assetsjs/jquery-3.6.0.min.js"></script>

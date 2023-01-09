@@ -27,10 +27,10 @@
 		</div>
 		</nav>
 	</header>
-    <section id="heroSearch" class="hero-search mtop-0 pt-0 pb-0">
-    <div class="container mb-15">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
+    <section id="heroSearch" class="hero-search mt-0 pt-0 pb-0">
+    <div class="container">
+        <div class="row mb-20">
+            <div class="col-sm-12 col-sm-12 col-md-12">
               <div class="slider--content">
                     <?php 
 
@@ -103,6 +103,7 @@
                         ?>
                 </div>
             </div>
+           
         </div>
     </div>
     <div class="carousel slider-navs" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="true" data-dots="false" data-space="0" data-loop="true" data-speed="800">
@@ -123,7 +124,6 @@
         </div>
     </div>
 </section>
-
 
         </div>
     </div>

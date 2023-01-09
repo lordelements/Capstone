@@ -252,8 +252,8 @@
                 Search: <input id="myInput" class="form-control" style="display:inline;width: 50%;" type="text" placeholder="Search by ID, Name, Address, Contact Number, and etc."></center><br>
                 <?php 
 
-                $email = $_SESSION['email'];
-                $logid = $_SESSION['logid'];
+                // $email = $_SESSION['email'];
+                // $logid = $_SESSION['logid'];
 
                 $sql = "SELECT * FROM accounts";
 
@@ -272,6 +272,7 @@
                         <th style = 'width: 450px;'>Address</th>
                         <th style = 'width: 300px;'>Contact</th>
                         <th style = 'width: 300px;'>Account Type</th>
+                        <th style = 'width: 300px;'>ID Card</th>
                         <th style = 'width: 550px;'>Action</th>
                         </tr>";
 
@@ -290,14 +291,15 @@
                                 <td ><?php echo  $row['logid'] ?></td>
                                 <td><?php echo  $row['position'] ?></td>
                                 <td><?php echo  $row['lname'].' ' . $row['mname'] . ' ' . $row['fname'] ?></td>
-                                <td><?php echo  $row['email'] ?></td>
+                                <td><?php echo  $row['email']?></td>
                                 <td><?php echo  $row['password'] ?></td>
                                 <td><?php echo  $row['address'] ?></td>
                                 <td><?php echo  $row['contactnumber'] ?></td>
                                 <td><?php echo  $row['acctype'] ?></td>
-                                <!-- <td>
-                                   <?php echo '<img src="images/.'.$row['idcard'].' "width=100px; height=100px; margin: 5px 10px 10px 5px" alt="Image">'?>
-                                </td> -->
+                                <td>
+                                   <?php echo '<img src="../images/.'.$row['idcard'].' '.$row['email'].' 
+								   "width=100px; height=100px; margin: 5px 10px 10px 5px" alt="Image">'?>
+                                </td>
                         <td>
                         <a  class=" btn btn-success" style='height: 30px; width=10px;'href="viewUsersacct.php?id= <?php echo  $row['logid'] ?>">
                         <i class="fa fa-edit"></i></a>

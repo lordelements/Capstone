@@ -1,4 +1,4 @@
-
+<?php include '../condb.php';?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -138,7 +138,8 @@
 									<div class="col-xs-12 col-sm-6 col-md-6">
 										<div class="form-group">
 											<div class="select--box">
-												<p style="display:inline;">Years of Term</p><input type="number" name="termyears" class="form-control" id="select-termyears" placeholder="0">
+												<p style="display:inline;">Years of Term</p><input type="number" maxlength="4"
+												name="termyears" class="form-control" id="select-termyears" placeholder="0">
 											</div>
 										</div>
 									</div>
@@ -183,10 +184,10 @@
 				<center><h5>Officials List</h5>
 			Search: <input id="myInput" class="form-control" style="display:inline;width: 50%;" type="text" placeholder="Search by ID, Name, Address, Contact Number, and etc."></center><br>
 			<?php 
-
-			$email = $_SESSION['email'];
-			$logid = $_SESSION['logid'];
-
+			
+			// $email = $_SESSION['email'];
+			// $logid = $_SESSION['logid'];
+		
 			$sql = "SELECT * FROM officials";
 
                         echo 
